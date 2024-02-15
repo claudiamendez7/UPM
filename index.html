@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML/CSS</title>
+    <title>Secciones y líneas generales de un documento HTML5</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
-    
+    <header>
+        <h1>Secciones y líneas generales de un documento HTML5</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Introducción</h2>
+            <p>La especificación HTML5 trae consigo una serie de nuevos elementos para los desarrolladores web, permitiéndoles describir la estructura de un documento web con una semántica estandarizada. Este documento describe estos elementos y cómo usarlos para definir el perfil de cualquier documento.</p>
+        </section>
+
+        <section>
+            <h2>Problemas resueltos por HTML5</h2>
+                <ol>
+                    <li>Elimina la necesidad de usar elementos <code>&lt;div&gt;</code> para definir secciones semánticas sin necesidad de valores específicos para los atributos <code>class</code>.</li>
+                    <li>Facilita la mezcla de varios documentos al establecer que los elementos de seccionado (<code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code> y <code>&lt;aside&gt;</code>) son siempre subsecciones de su sección ancestra más cercana.</li>
+                    <li>Introduce el elemento <code>&lt;hgroup&gt;</code> que oculta todos los elementos de cabecera excepto el primero de más alto rango.</li>
+                    <li>Permite definir secciones especiales que no forman parte del flujo principal del documento mediante el elemento <code>&lt;aside&gt;</code>.</li>
+                    <li>Introduce tres elementos específicos para secciones relacionadas con el sitio web: <code>&lt;nav&gt;</code> para colecciones de enlaces, <code>&lt;footer&gt;</code> y <code>&lt;header&gt;</code>.</li>
+                </ol>
+        </section>
+
+        <section>
+            <h2>El algoritmo de perfilado de HTML5</h2>
+            <p>En general, HTML5 aporta precisión a las características de seccionado y cabecera, permitiendo que los perfiles de documento sean predecibles y utilizados por el navegador para mejorar la experiencia del usuario.</p>
+        </section>
+
+        <section>
+            <h2>Definiendo secciones en HTML5</h2>
+            <p>Todo el contenido dentro del elemento <code>&lt;body&gt;</code> forma parte de una sección. Las secciones en HTML5 pueden ser anidadas. Además de la sección principal, definida por el elemento <code>&lt;body&gt;</code>, los límites de la sección se definen explícita o implícitamente.</p>
+            <p>Las secciones definidas explícitamente son el contenido definido en las etiquetas <code>&lt;body&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;header&gt;</code> y <code>&lt;nav&gt;</code>.</p>
+            <p>Cada sección puede tener su propia jerarquía de encabezados. Incluso una sección anidada puede tener un elemento <code>&lt;h1&gt;</code>.</p>
+            <p>Para más información, consulte también <strong>Definiendo cabeceras en HTML5</strong>.</p>
+                <pre><code>&lt;section&gt;
+                    &lt;h1&gt;Forest elephants&lt;/h1&gt;
+                    &lt;section&gt;
+                    &lt;h1&gt;Introduction&lt;/h1&gt;
+                    &lt;p&gt;In this section, we discuss the lesser known forest elephants.&lt;/p&gt;
+                    &lt;/section&gt;
+                    &lt;section&gt;
+                    &lt;h1&gt;Habitat&lt;/h1&gt;
+                    &lt;p&gt;Forest elephants do not live in trees but among them.&lt;/p&gt;
+                    &lt;/section&gt;
+                    &lt;aside&gt;
+                    &lt;p&gt;advertising block
+                    &lt;/p&gt;
+                    &lt;/aside&gt;
+                    &lt;/section&gt;
+                    &lt;section&gt;
+                    &lt;h1&gt;Savannah elephants&lt;/h1&gt;
+                    &lt;/section&gt;</code></pre>
+        </section>
+    </main>
+    <footer>
+        <p>cpmt</p>
+    </footer>
 </body>
-</html>
+</html
